@@ -1,7 +1,10 @@
 def last_name_decorator(method):
     def wrapper(self):
         method(self)
+        # prints first name
+
         print("last name")
+        # prints last name
 
     
     return wrapper
